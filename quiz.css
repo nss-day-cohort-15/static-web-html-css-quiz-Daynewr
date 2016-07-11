@@ -15,6 +15,9 @@ h3 {
 }
 
 body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-space-around;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -24,18 +27,21 @@ p {
   margin: 5px 10px 0;
 }
 
-p:not(.description){
+p:not(.not-bold){
   font-weight: 900;
 }
 
 img {
   display: block;
   margin: auto;
+  max-width: 100%;
 }
 
 .product {
   width: 30%;
+  min-width: 350px;
   border: solid 1px #add8e6;
+  margin: 5px;
 }
 
 .availability {
@@ -43,4 +49,9 @@ img {
   color: #f7fd39;
   margin: 10px 0;
   padding: 5px;
+}
+
+.small-valid {
+  font-size: .75em;
+  margin: 5px 0;
 }
